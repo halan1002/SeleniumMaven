@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Unit 10 - Suite by package" verbose="1">
+    <test name="FirstTest">
+        <packages>
+            <package name="exercise.unit10Annotation"/>
+        </packages>
+    </test>
+</suite>

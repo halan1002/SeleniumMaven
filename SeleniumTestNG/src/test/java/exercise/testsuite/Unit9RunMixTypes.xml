@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite for mixing types" verbose="1">
+    <test name="FirstTest">
+
+        <packages>
+            <package name="exercise.unit9testng1"/>
+        </packages>
+
+        <classes>
+            <class name="exercise.unit9testng2.TestNG201">
+                <methods>
+                    <include name="testAnhTesterBlog201"/>
+                </methods>
+            </class>
+            <class name="exercise.unit9testng2.TestNG202" />
+        </classes>
+    </test>
+    <test name="SecondTest">
+
+        <packages>
+            <package name="exercise.unit9testng2"/>
+        </packages>
+
+        <classes>
+            <class name="exercise.unit9testng1.TestNG101">
+                <methods>
+                    <include name="testGoogleSearch101"/>
+                </methods>
+            </class>
+            <class name="exercise.unit9testng2.TestNG201" />
+        </classes>
+    </test>
+</suite>
